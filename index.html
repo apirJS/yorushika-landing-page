@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="menu">
+        <img
+          class="logo"
+          src="./assets/image/logo.svg"
+          alt="Yorushika-logo"
+          onclick="scrollToTop()"
+        />
+        <ul>
+          <li onclick="scrollToTop()">About</li>
+          <li onclick="scrollToStreaming()">Streaming</li>
+          <li onclick="scrollToDiscography()">Discography</li>
+        </ul>
+        <button class="hamburger" onclick="openHamburgerMenu()">
+          <img
+            src="./assets/image/burger-menu-right-svgrepo-com.svg"
+            alt="hamburger"
+          />
+        </button>
+        <ol>
+          <li onclick="scrollToTop()">About</li>
+          <li onclick="scrollToStreaming()">Streaming</li>
+          <li onclick="scrollToDiscography()">Discography</li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="hero">
+          <video class="bg-video" autoplay muted loop>
+            <source src="./assets/videos/yorushika-264.mp4" type="video/mp4" />
+          </video>
+          <img
+            class="bg-image"
+            src="./assets/image/yorushika-black.png"
+            alt="yorushika-black"
+          />
+          <article class="profile">
+            <img class="itte-gif" src="./assets/gif/itte.gif" alt="yorushika-say-it" />
+            <p>
+              <strong>Yorushika (ヨルシカ)</strong>, a band formed by composer
+              <strong>n-buna</strong> and vocalist <strong>suis</strong>. The
+              name "Yorushika" is taken from a lyric in their song
+              <i>The Clouds and the Ghost</i>,
+              <i>yoru shika mō nemurezu ni</i> (夜しかもう眠れずに, meaning "I
+              can only sleep at night"). The eye-designed logo mark is a motif
+              of two moons facing each other and also serves as a clock hand,
+              portraying the time "from 6:00 to night".
+            </p>
+            <button class="listen-now" onclick="scrollToStreaming()">
+              <span>Listen Now</span>
+              <img src="./assets/image/play-icon.png" alt="play-button" />
+            </button>
+          </article>
+        </div>
+      </section>
+      <section id="streaming">
+        <div class="streaming-container">
+          <h1 class="container-heading">Streaming Available On</h1>
+          <div class="platforms"></div>
+        </div>
+        <aside>
+          <img src="./assets/gif/itte-2.gif" alt="itte-gif" />
+          <div class="sound-bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </aside>
+      </section>
+      <section id="discography">
+        <h1>DISCOGRAPHY</h1>
+        <div class="slider-container">
+          <img
+            onclick="slideImages(-1)"
+            class="arrow left"
+            src="./assets/image/arrow.svg"
+            alt="arrow-right"
+          />
+          <div class="slides"></div>
+          <img
+            onclick="slideImages(1)"
+            class="arrow right"
+            src="./assets/image/arrow.svg"
+            alt="arrow-left"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h2 class="official-site">
+          <span>Official site:</span>
+          <a target="_blank" href="https://yorushika.com/">yorushika.com</a>
+        </h2>
+        <h2>
+          <a target="_blank" href="https://yorushika.com/">GitHub</a>
+        </h2>
+        <h2>©2024</h2>
+      </div>
+      <button class="scroll-up" onclick="scrollToTop()">
+        <img src="./assets/image/arrow.svg" alt="arrow-up" />
+      </button>
+    </footer>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
